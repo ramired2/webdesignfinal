@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Take the Quiz!</title>
+    </head>
+
+    <!-- allow for buttons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <body>
+        <header class="quizHeader">
+            <h1>Take the Quiz!</h1>
+        </header>
+
+        <main class="quizPage">
+            <!-- NEED TO ADD SIDEBAR LIKE FROM MAIN PAGE -->
+
+
+            <div class="quizInstructionsContainer">
+                <p class="quizInstructions genText">Test your sign language knowledge with this fun quiz! Seeing as you're still learning... you'll be able to ask for the 
+                    correct answer at any time! If your answer is wrong, clicking on the 'Try Again' button will let you try again. Clicking 'Restart All' will reset your score and restart all your answers</p>
+            </div>
+
+        <div class="restartWithScoreContainer">
+
+            <button type="button" id="restartAllButton" class="actionButton">Restart All</button>
+
+            <div class="scoreContainer">
+                <h4>Score: <span class="quizScore">0</span></h4>
+            </div>
+        </div>
+
+        <div class="quizzesContainer">
+
+            <div class="question">
+                <div class="questionContent">
+                    <p class="questionNum">Q1.</p>
+
+                    <div class="videoContainer">
+                        <video width="315" height="190" controls>
+                            <!-- general sign languaged video shown, replace w vocab words -->
+                            <source src="dog.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <!-- have 10-15 quiz questions all on one page and have a check button -->
+                    <div class="answerOptions">
+                        <label for="quiz">The word signed is:</label>
+                        
+                        <select id="quiz" class="quizQuestion">
+                            <option value="a">Dog</option>
+                            <option value="b">Boy</option>
+                            <option value="c">Coy</option>
+                            <option value="d">God</option>
+                        </select>
+                    </div>
+
+                    <div class="quizActions">
+                    <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+
+                    <button type="button" id="restartButton" class="actionButton">Restart</button>
+                    </div>
+
+                    <div class = "solution" data-solution="dog">
+                        <!-- have solution hidden until they ask for it -->
+                        <p class="genText">The correct answer is: <span id="solution" value="a">Dog</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                    <p class="questionNum">Q2.</p>
+
+                    <div class="videoContainer">
+                        <video width="315" height="190" controls>
+                            <!-- general sign languaged video shown, replace w vocab words -->
+                            <source src="boy.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <!-- have 10-15 quiz questions all on one page and have a check button -->
+                    <div class="answerOptions">
+                        <label for="quiz">The word signed is:</label>
+                        
+                        <select id="quiz" class="quizQuestion">
+                            <option value="a">Sob</option>
+                            <option value="b">Soy</option>
+                            <option value="c">Boy</option>
+                            <option value="d">Rob</option>
+                        </select>
+                    </div>
+
+                    <div class="quizActions">
+                        <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+                    
+                        <button type="button" id="restartButton" class="actionButton">Restart</button>
+                    </div>
+                    <div class = "solution" data-solution="boy">
+                        <!-- have solution hidden until they ask for it -->
+                        <p class="genText">The correct answer is: <span id="solution" value="c">Boy</span></p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q3.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="my.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">To</option>
+                        <option value="b">So</option>
+                        <option value="c">By</option>
+                        <option value="d">My</option>
+                    </select>
+                </div>
+
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+                </div>
+                <div class = "solution" data-solution="my">
+                    <!-- have solution hidden until they ask for it -->
+                    <p class="genText">The correct answer is: <span id="solution" value="d">My</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q4.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="signLanguageMuted.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+                
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+</div>
+                <div class = "solution" data-solution="ANSWER">
+                <!-- have solution hidden until they ask for it -->
+                <p class="genText">The correct answer is: <span id="solution" value="ANSWER">ANSWER</span></p>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q5.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="signLanguageMuted.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+            
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+</div>
+                <div class = "solution" data-solution="ANSWER">
+                    <!-- have solution hidden until they ask for it -->
+                    <p class="genText">The correct answer is: <span id="solution" value="ANSWER">ANSWER</span></p>
+                    </div>
+                    </div>
+
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q6.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="signLanguageMuted.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+                
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+</div>
+                <div class = "solution" data-solution="ANSWER">
+                    <!-- have solution hidden until they ask for it -->
+                    <p class="genText">The correct answer is: <span id="solution" value="ANSWER">ANSWER</span></p>
+                    </div>
+                    </div>
+
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q7.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="signLanguageMuted.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+                
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+</div>
+                <div class = "solution" data-solution="ANSWER">
+                    <!-- have solution hidden until they ask for it -->
+                    <p class="genText">The correct answer is: <span id="solution" value="ANSWER">ANSWER</span></p>
+                    </div>
+                    </div>
+
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q8.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="signLanguageMuted.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+                
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+</div>
+                <div class = "solution" data-solution="ANSWER">
+                    <!-- have solution hidden until they ask for it -->
+                    <p class="genText">The correct answer is: <span id="solution" value="ANSWER">ANSWER</span></p>
+                    </div>
+                    </div>
+
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q9.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="signLanguageMuted.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+                
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+</div>
+                <div class = "solution" data-solution="ANSWER">
+                    <!-- have solution hidden until they ask for it -->
+                    <p class="genText">The correct answer is: <span id="solution" value="ANSWER">ANSWER</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <div class="questionContent">
+                <p class="questionNum">Q10.</p>
+
+                <div class="videoContainer">
+                    <video width="315" height="190" controls>
+                        <!-- general sign languaged video shown, replace w vocab words -->
+                        <source src="signLanguageMuted.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- have 10-15 quiz questions all on one page and have a check button -->
+                <div class="answerOptions">
+                    <label for="quiz">The word signed is:</label>
+                    
+                    <select id="quiz" class="quizQuestion">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                    </select>
+                </div>
+
+                <div class="quizActions">
+                <button type="button" id="checkAnswer" class="actionButton">CheckAnswer</button>
+            
+                <button type="button" id="restartButton" class="actionButton">Restart</button>
+</div>
+                <div class = "solution" data-solution="ANSWER">
+                    <!-- have solution hidden until they ask for it -->
+                    <p class="genText">The correct answer is: <span id="solution" value="ANSWER">ANSWER</span></p>
+                    </div>
+                    </div>
+                    
+            </div>
+
+        </div>
+
+        </main>
+
+    </body>
+    </html>

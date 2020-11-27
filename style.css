@@ -1,0 +1,206 @@
+/* QUIZ.HTML */
+html {
+    background-color: #7f4f4cb9;
+}
+
+.quizHeader {
+    background-color: white;
+    box-shadow: 10px 10px #dfdede33;
+    border-radius: 15px;
+    width: 600px;
+    position: relative;
+    text-align: center;
+    left: 20%;
+}
+
+.quizHeader h1 {
+    font-size: 25px;
+    color: #2E3631;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+.genText{
+    color: #2E3631;
+}
+
+.quizPage {    
+    background-color: white;
+    border-radius: 15px;
+    width: 400px;
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    box-shadow: 10px 15px #dfdede59;
+    width: 600px;
+}
+
+.quizInstructionsContainer {
+    font-size: 15px;
+    color: #2E3631;
+    padding:10px 15px 10px 15px;
+    margin:10px;
+    position: relative;
+    display: flex;
+
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: #81AA81;
+}
+
+.actionButton {
+    color: white;
+    border-radius: 5px;
+    border-color: #81AA81;
+    background-color: #81AA81;
+    margin-right: 40px;
+}
+
+.actionButton:hover {
+    background-color: #DCA482;
+    box-shadow: none;
+    cursor: pointer;
+    border-color: #DCA482;
+    border-radius: 5px;
+}
+
+.quizActions {
+    margin-left: 30px;
+}
+
+#restartAllButton {
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.quizzesContainer {
+    height: 100%;
+    padding: 5px 5px 15px 5px;
+    align-items: center;
+    position: sticky;
+    left: 35%;
+}
+
+.scoreContainer{
+    display: inline-flex;
+    font-size: 20px;
+}
+
+.restartWithScoreContainer {
+    position: relative;
+    text-align: center;
+    width:200px;
+    left: 35%;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: #81AA81;
+}
+
+.question {
+    margin: 20px;
+    left: 200px;
+    border: 3px solid;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: #81AA81;
+    align-items: center;
+}
+
+.questionContent {
+    text-align: center;
+}
+
+.questionNum {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.videoContainer {
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.answerOptions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.solution {
+    font-size: 15px;
+}
+.solution {
+    display: none;
+}
+
+/* RESOURCES.HTML */
+
+.resourcesHeader {
+    background-color: white;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    left: 10px;
+    height: 60px;
+    margin-right:15px;
+    box-shadow: 10px 5px #dfdede33;
+}
+
+.resourcesH1 {
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.resources {
+    background-color: white;
+    box-shadow: 10px 10px #dfdede33;
+    position: relative;
+    left: 5px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-right: 10px;
+    right: 15px;
+    bottom: 10px;
+    top: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pageContent {
+    font-size: 13px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.briefing {
+    font-size: 15px;
+    font-weight: 5px;
+}
+
+.group{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.info {
+    position: relative;
+    left: 15px;
+}
+
+.resourceLink {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: #81AA81;
+}
+
+.resourceLink:hover {
+    font-size: 16px;
+    color: #7F4F4C;
+}
+
